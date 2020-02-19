@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientes>
+            <cliente>
+                <nome>as</nome>
+                <email>as@as.com</email>
+                <telefone>23</telefone>
+                <data>2020-01-30</data>
+                <hora>00:01</hora>
+            </cliente>
+        <cliente><nome/><email/><telefone/><data/><hora/></cliente><cliente><nome>joao</nome><email>jao@jao.com</email><telefone>375687345638756</telefone><data>2020-02-01</data><hora>12:12</hora></cliente><cliente><nome>joao</nome><email>jao@jao.com</email><telefone>214</telefone><data>2020-02-15</data><hora>12:32</hora></cliente><cliente><nome>joao</nome><email>jao@jao.com</email><telefone>2354</telefone><data>2020-02-14</data><hora>23:04</hora></cliente><cliente><nome>Amandinha</nome><email>amanda@gmail.com</email><telefone>00000000000</telefone><data>2020-02-21</data><hora>21:03</hora></cliente></clientes>
