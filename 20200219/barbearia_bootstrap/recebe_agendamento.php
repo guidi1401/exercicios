@@ -5,10 +5,13 @@
             <ul class="navbar-nav">
                 <?php  
                         echo'<li class="nav-item active">
-                                <a class="nav-link" href="form_agendamento.php"> Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="index.php"> Home <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="lista_agendamento.php">Lista de Agendamentos</a>
+                                <a class="nav-link" href="form_agendamento.php">agendar</a>
+                                </li>
+								<li class="nav-item">
+                                <a class="nav-link" href="lista_agendamento.php">lista</a>
                                 </li>
                             </li>';
                     ?>

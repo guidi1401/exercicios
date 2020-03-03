@@ -15,11 +15,14 @@
                     <ul class="navbar-nav">
                         <?php  
                             echo'<li class="nav-item active">
-                                    <a class="nav-link" href="form_agendamento.php"> Home <span class="sr-only">(current)</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                    <a class="nav-link" href="lista_agendamento.php">Lista de Agendamentos</a>
-                                    </li>
+                                <a class="nav-link" href="index.php"> Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="form_agendamento.php">agendar</a>
+                                </li>
+								<li class="nav-item">
+                                <a class="nav-link" href="lista_agendamento.php">lista</a>
+                                </li>
                             </li>';
                         ?>
                     </ul>
@@ -29,7 +32,7 @@
         <div class="login-form col-xs-10 offset-xs-1 
 			col-sm-6 offset-sm-3 col-md-4 offset-md-4" >
 			<header>
-				<p> <h2 class="text-center">Bem-vindo à Barbearia IFSP!</h2> </p>
+				
                 <p> <h5 class="text-center">Faça seu agendamento:</h5> </p>
 			</header>
 			<form action="recebe_agendamento.php" method="POST" class="form">
