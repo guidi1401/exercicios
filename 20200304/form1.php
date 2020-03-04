@@ -5,34 +5,28 @@
 		<title> Formulário 1 </title>
 		<script>
 			function validar(valor1, valor2, valor3, valor4){
+				mensagem="";
 				if(valor1==""){
-					mensagem= "nao informou o nome!";
-					alert(mensagem);
+					mensagem+= "nao informou o nome! \n";
 				}else{ 
-					mensagem= "ja informou o nome ('"+valor1+"')!";
-					alert(mensagem);
+					mensagem+= "ja informou o nome ('"+valor1+"')! \n";;
 				}
 				if(valor2==""){
-					mensagem= "nao informou o email!";
-					alert(mensagem);
+					mensagem+= "nao informou o email! \n";
 				}else{ 
-					mensagem= "ja informou o email ('"+valor2+"')!";
-					alert(mensagem);
+					mensagem+= "ja informou o email ('"+valor2+"')! \n";
 				}
 				if(valor3==""){
-					mensagem= "nao informou o sexo!";
-					alert(mensagem);
+					mensagem+= "nao informou o sexo! \n";
 				}else{ 
-					mensagem= "ja informou o sexo ('"+valor3+"')!";
-					alert(mensagem);
+					mensagem+= "ja informou o sexo ('"+valor3+"')! \n";
 				}
 				if(valor4==""){
-					mensagem= "nao informou a data de nascimento!";
-					alert(mensagem);
+					mensagem+= "nao informou a data de nascimento! \n";
 				}else{ 
-					mensagem= "ja informou a data de nascimento ('"+valor4+"')!";
-					alert(mensagem);
+					mensagem+= "ja informou a data de nascimento ('"+valor4+"')! \n";
 				}
+				alert(mensagem);
 			}
 		</script>
 	</head>
@@ -49,6 +43,7 @@
 			<p>
 				<label>Sexo:</label>
 				<select name="sexo"/>
+					<option value="">::selecione::</option>
 					<option value="masculino">Masculino</option>
 					<option value="feminino">Feminino</option>
 					<option value="outro">Outro</option>
