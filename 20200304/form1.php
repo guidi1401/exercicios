@@ -8,17 +8,29 @@
 				if(valor1==""){
 					mensagem= "nao informou o nome!";
 					alert(mensagem);
+				}else{ 
+					mensagem= "ja informou o nome ('"+valor1+"')!";
+					alert(mensagem);
 				}
 				if(valor2==""){
 					mensagem= "nao informou o email!";
+					alert(mensagem);
+				}else{ 
+					mensagem= "ja informou o email ('"+valor2+"')!";
 					alert(mensagem);
 				}
 				if(valor3==""){
 					mensagem= "nao informou o sexo!";
 					alert(mensagem);
+				}else{ 
+					mensagem= "ja informou o sexo ('"+valor3+"')!";
+					alert(mensagem);
 				}
 				if(valor4==""){
 					mensagem= "nao informou a data de nascimento!";
+					alert(mensagem);
+				}else{ 
+					mensagem= "ja informou a data de nascimento ('"+valor4+"')!";
 					alert(mensagem);
 				}
 			}
