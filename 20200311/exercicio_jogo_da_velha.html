@@ -1,0 +1,82 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Jogo da Velha </title>
+    <style>
+        input{width:40px; text-align:center;}
+        table{border:1px solid; background-color:rgb(9, 226, 255);}
+    </style>
+    <script>
+        var cont = 0;
+        function validar_jogada(objeto){
+            jogo = objeto.value;
+            console.log(cont);
+            if(cont%2 == 0 && jogo == "X"){
+                cont++;
+                validar_jogada2();
+                return true;
+            }else{
+                alert('Jogo Inválido');
+                objeto.value = "";
+                return false;
+            }
+
+            if(cont%2 == 1 && jogo == "0"){
+                cont++;
+                validar_jogada2();
+                return true;
+            }else{
+                alert('Jogo Inválido');
+                objeto.value = "";
+                return false;
+            }
+        }
+
+        function validar_jogada2(){
+            a = document.getElementById('a');
+            b = document.getElementById('b');
+            c = document.getElementById('c');
+            d = document.getElementById('d');
+            e = document.getElementById('e');
+            f = document.getElementById('f');
+            g = document.getElementById('g');
+            h = document.getElementById('h');
+            i = document.getElementById('i');
+            
+            if((a == b && b == c && c != "") || (d == e && e == f && f != "") || (g == h && h == i && i != "")){
+                alert('Você venceu!')
+            }
+
+            if((a == d && d == g && g != "") || (b == e && e == h && h != "") || (c == f && f == i && i != "")){
+                alert('Você venceu!')
+            }
+
+            if((a == e && e == i && i != "") || (c == e  && e == g && g != "")){
+                alert('Você venceu!')
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3> Jogo da Velha! </h3>
+    <h4> Coloque X ou 0:</h>
+    <table border="1">
+        <tr>
+            <td> <input type="text" onblur="validar_jogada(this)" name="a"/></td>
+            <td> <input type="text" onblur="validar_jogada(this)" name="b"/></td>
+            <td> <input type="text" onblur="validar_jogada(this)" name="c"/></td>
+        </tr>
+        <tr>
+            <td> <input type="text" onblur="validar_jogada(this)" name="d"/></td>
+            <td> <input type="text" onblur="validar_jogada(this)" name="e"/></td>
+            <td> <input type="text" onblur="validar_jogada(this)" name="f"/></td>
+        </tr>
+        <tr>
+            <td> <input type="text" onblur="validar_jogada(this)" name="g"/></td>
+            <td> <input type="text" onblur="validar_jogada(this)" name="h"/></td>
+            <td> <input type="text" onblur="validar_jogada(this)" name="i"/></td>
+        </tr>
+    </table>
+</body>
+</html>
